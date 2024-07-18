@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+
+    <!-- FontAwesome icons css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- My Animaition css file -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- My Media Query css file -->
+    <link rel="stylesheet" href="css/media.css">
+    <!-- My Main CSS file -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="pt-5">
+
+    <h1 class="text-center mb-5 B-secondary-font-family">Customers Transactions Dashboard</h1>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="chart_types text-center">
+                    <button class="chart-button btn btn-primary" id="bar" >Bars</button>
+                    <button class="chart-button btn btn-primary" id="line" >line</button>
+                    <button class="chart-button btn btn-primary" id="doughnut">Doughnut</button>
+                    <button class="chart-button btn btn-primary" id="polarArea">Polar Area</button>
+                    <button class="chart-button btn btn-primary" id="radar">Radar</button>
+                </div>
+                <div class="myChart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+            <div class="col-md-6 ">
+                <!-- Table -->
+                <div class="row pb-3">
+                    <div class="item col-md-6">
+                        <input list="customer-list" type="text" class="form-control customer-input" placeholder="Filter By Customer Name">
+                        <datalist id="customer-list">
+
+                        </datalist>
+                    </div>
+                    <div class="item col-md-6">
+                        <input list="transaction-list" type="text" class="form-control transactions-input" placeholder="Filter By Transaction Amount">
+                        <datalist id="transaction-list">
+
+                        </datalist>
+                    </div>
+
+                </div>
+                <div class="table-container overflow-y-scroll">
+                    <table
+                        class="R-main-font-family table table-hover table-bordered table-primary border-2 table-striped position-relative text-center">
+                        <thead class="position-sticky top-0 table-dark">
+                            <th>Customer Name</th>
+                            <th>Transaction</th>
+                            <th>Date</th>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

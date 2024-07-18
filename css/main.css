@@ -1,0 +1,200 @@
+/* ================= Start fonts ================= */
+@font-face {
+    font-family: 'Montserrat-B';
+    src: url('../webfonts/Montserrat-Black.woff2') format('woff2'),
+        url('../webfonts/Montserrat-Black.woff') format('woff'),
+        url('../webfonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-R';
+    src: url('../webfonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../webfonts/Montserrat-Regular.woff') format('woff'),
+        url('../webfonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-B';
+    src: url('../webfonts/Poppins-Black.woff2') format('woff2'),
+        url('../webfonts/Poppins-Black.woff') format('woff'),
+        url('../webfonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-R';
+    src: url('../webfonts/Poppins-Regular.woff2') format('woff2'),
+        url('../webfonts/Poppins-Regular.woff') format('woff'),
+        url('../webfonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ================= End fonts ================= */
+
+:root {
+    /* Start Color classes */
+    --body-font-color: #748182;
+    --black-font-color: #343434;
+    --main-bg-color: #0D0D0D;
+    --section-bg-color-hexa: #F7F7F7;
+    --section-bg-color-rgb: 247, 247, 247;
+    --card-content-bg: #5A5A5A;
+    /* End Color classes */
+
+    /* Start Font Variables */
+    --B-main-font-family: 'Montserrat-B';
+    --R-main-font-family: 'Montserrat-R';
+    --B-Secondary-font-family: 'Poppins-B';
+    --R-Secondary-font-family: 'Poppins-R';
+    /* End Font Variables */
+
+    /* Start Font sizes */
+    --my-fs-button: 0.8125rem;
+    /* 13px */
+    --my-fs-sm: 0.875rem;
+    /* 14px */
+    --my-fs-md: 0.9375rem;
+    /* 15px */
+    --my-fs-lg: 1rem;
+    /* 16px */
+    --my-fs-team-icons-positions: 1.25rem;
+    /* 20px */
+    --my-fs-section-header: 2.5rem;
+    /* 40px */
+    --my-fs-numvers-icons-nums: 1.875rem;
+    /* 30px */
+    --my-fs-about-header-paragraph-icon: 1.875rem;
+    /* 30px */
+    /* End Font sizes */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= Start Root Classes ================= */
+
+
+/* Start Font classes */
+
+.B-main-font-family {
+    font-family: var(--B-main-font-family);
+}
+
+.R-main-font-family {
+    font-family: var(--R-main-font-family);
+}
+
+.B-secondary-font-family {
+    font-family: var(--B-Secondary-font-family);
+}
+
+.R-secondary-font-family {
+    font-family: var(--R-Secondary-font-family);
+}
+
+.letter-spacing {
+    letter-spacing: 0.125rem;
+}
+
+.line-height {
+    line-height: 0.75rem;
+}
+
+/* End Font classes */
+
+
+
+/* Start font sizes classes */
+.my-fs-button {
+    font-size: var(--my-fs-button);
+}
+
+.my-fs-sm {
+    font-size: var(--my-fs-sm);
+}
+
+.my-fs-md {
+    font-size: var(--my-fs-md);
+}
+
+.my-fs-lg {
+    font-size: var(--my-fs-lg);
+}
+
+.my-fs-team-icons-positions {
+    font-size: var(--my-fs-team-icons-positions);
+}
+
+.my-fs-section-header {
+    font-size: var(--my-fs-section-header);
+}
+
+.my-fs-numvers-icons-nums {
+    font-size: var(--my-fs-numvers-icons-nums);
+}
+
+.my-fs-about-header-paragraph-icon {
+    font-size: var(--my-fs-about-header-paragraph-icon);
+}
+
+/* End font sizes classes */
+
+
+
+/* Start color classes */
+
+.body-font-color {
+    color: var(--body-font-color);
+}
+
+
+.main-bg-color
+{
+    background-color: var(--main-bg-color);
+}
+
+.black-font-color {
+    color: var(--black-font-color);
+}
+
+.section-bg-color-hexa {
+    background-color: var(--section-bg-color-hexa);
+}
+
+.section-bg-color-rgb {
+    background-color: rgb(var(--section-bg-color-rgb));
+}
+
+.card-content-bg {
+    background-color: var(--card-content-bg);
+}
+
+/* End color classes */
+
+/* ================= End Root Classes ================= */
+
+
+
+
+/* ================== Start General Classes  ================== */
+.myChart
+{
+    height: 30rem;
+}
+/* ================== End General Classes ================== */
+
+.table-container
+{
+    height: 25rem;
+}
