@@ -22,11 +22,6 @@ $(".transactions-input").on("input", (eventInfo) => {
 
     getTransactions($(eventInfo.target).val())
 })
-$(".chart-button").on("click", (e) => {
-    let id = $(e.target).attr("id")
-    chart.destroy()
-    createChart(id)
-})
 
 async function getCustomers(term, callBack) {
 
@@ -114,27 +109,30 @@ async function getTransactions(amount) {
 
     tableBody.html(blackBox)
 
-    // if (!chartInitialized) {
-    if (dates == undefined || amounts == undefined || label == "") {
+
         if (chart) {
-            chart.destroy()
-            createChart("bar", customerArr, transactionsArr)
-            chartInitialized = true;
+            if(label == "")
+            {
+                chart.destroy()
+
+            }
+            else
+            {
+                chart.destroy()
+                createChart("bar", dates, amounts);
+                chartInitialized = true;
+            }
         }
-        else {
+        else
+        {
 
-            createChart("bar", customerArr, transactionsArr)
+            createChart("bar", dates, amounts);
             chartInitialized = true;
+            
         }
-    }
-    else {
-        chart.destroy()
-        createChart("bar", dates, amounts);
-        chartInitialized = true;
 
+    
 
-    }
-    // }
 }
 
 getCustomers("", () => { getTransactions("") })
